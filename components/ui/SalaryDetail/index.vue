@@ -38,7 +38,17 @@
         >
           Bảo hiểm xã hội (8%)
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(totalSocialInsuranceFee) }}
         </div>
       </div>
@@ -57,7 +67,17 @@
         >
           Bảo hiểm y tế (1.5%)
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(totalHealthInsuranceFee) }}
         </div>
       </div>
@@ -76,7 +96,17 @@
         >
           Bảo hiểm thất nghiệp (1%)
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(totalUnemploymentInsuranceFee) }}
         </div>
       </div>
@@ -97,7 +127,17 @@
         >
           Thu nhập trước thuế
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(salaryBeforeTax) }}
         </div>
       </div>
@@ -116,7 +156,17 @@
         >
           Giảm trừ gia cảnh bản thân
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(salaryByRegulation.minusMyself) }}
         </div>
       </div>
@@ -135,7 +185,17 @@
         >
           Giảm trừ gia cảnh người phụ thuộc
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(salaryByRegulation.dependents * numberDependentPerson) }}
         </div>
       </div>
@@ -156,7 +216,17 @@
         >
           Thu nhập chịu thuế
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(thuNhapChiuThue) }}
         </div>
       </div>
@@ -175,7 +245,17 @@
         >
           Thuế thu nhập cá nhân(*)
         </div>
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+          "
+        >
           {{ $currency(totalTax) }}
         </div>
       </div>
@@ -205,6 +285,8 @@
             tw-border-grey-300
             tw-p-2
             tw-flex
+            tw-text-sm
+            md:tw-text-base
             tw-items-center
           "
         >
