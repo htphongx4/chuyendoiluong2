@@ -1,6 +1,6 @@
 <template>
   <div class="tw-flex tw-items-center tw-my-4 tw-gap-4">
-    <label class="tw-font-bold tw-mr-4" for="Thu Nhập:"> Chọn vùng: </label>
+    <label class="tw-font-bold tw-mr-4 tw-text-sm md:tw-text-base" for="Thu Nhập:"> Chọn vùng: </label>
     <Checkbox
       :active="areaSelected === area.value"
       v-for="(area, index) in areaList"

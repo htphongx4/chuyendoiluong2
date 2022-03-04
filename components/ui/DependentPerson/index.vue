@@ -1,5 +1,5 @@
 <template>
-  <h4 class="tw-font-bold tw-mb-3">Số người phụ thuộc:</h4>
+  <h4 class="tw-font-bold tw-mb-3 tw-text-sm md:tw-text-base">Số người phụ thuộc:</h4>
   <Field
     class="
       tw-border

@@ -2,34 +2,78 @@
   <div class="tw-text-primary-medium tw-font-lg tw-mb-4">
     Diễn giải chi tiết bảng lương
   </div>
-  <div class="tw-bg-white tw-rounded-sm tw-mb-4">
+  <div class="tw-bg-white tw-rounded-sm tw-mb-4 tw-p-2">
     <div>
-      <div class="tw-grid tw-grid-cols-2 tw-text-primary-medium">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3 tw-text-primary-medium">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Lương Gross
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(grossSalary) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Bảo hiểm xã hội (8%)
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(totalSocialInsuranceFee) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Bảo hiểm y tế (1.5%)
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(totalHealthInsuranceFee) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Bảo hiểm thất nghiệp (1%)
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
@@ -38,24 +82,57 @@
       </div>
     </div>
     <div>
-      <div class="tw-grid tw-grid-cols-2 tw-text-primary-medium">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3 tw-text-primary-medium">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Thu nhập trước thuế
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(salaryBeforeTax) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Giảm trừ gia cảnh bản thân
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(salaryByRegulation.minusMyself) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Giảm trừ gia cảnh người phụ thuộc
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
@@ -64,26 +141,59 @@
       </div>
     </div>
     <div>
-      <div class="tw-grid tw-grid-cols-2 tw-text-primary-medium">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3 tw-text-primary-medium">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Thu nhập chịu thuế
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(thuNhapChiuThue) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Thuế thu nhập cá nhân(*)
         </div>
         <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
           {{ $currency(totalTax) }}
         </div>
       </div>
-      <div class="tw-grid tw-grid-cols-2 tw-text-primary-medium">
-        <div class="tw-font-bold tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2">
+      <div class="tw-grid tw-grid-cols-3 tw-text-primary-medium">
+        <div
+          class="
+            tw-font-bold
+            tw-pb-2
+            tw-border-b
+            tw-border-grey-300
+            tw-p-2
+            tw-text-sm
+            md:tw-text-base
+            tw-col-start-1 tw-col-end-3
+          "
+        >
           Lương NET
-          <p class="tw-font-normal tw-italic">
+          <p class="tw-font-normal tw-italic tw-pr-3">
             (Thu nhập trước thuế - Thuế thu nhập cá nhân.)
           </p>
         </div>
