@@ -55,7 +55,7 @@ export default {
   },
 
   totalInsuranceFee({ salaryType }) {
-    if (salaryType !== "net-to-gross") {
+    if (salaryType !== "gross-to-net") {
       return this.grossToNetObj.pbh;
     }
 
