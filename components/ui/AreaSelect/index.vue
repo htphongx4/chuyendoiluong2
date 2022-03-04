@@ -1,6 +1,15 @@
 <template>
   <div class="tw-flex tw-items-center tw-my-4 tw-gap-4">
-    <label class="tw-font-bold tw-mr-4 tw-text-sm md:tw-text-base" for="Thu Nhập:"> Chọn vùng: </label>
+    <label
+      class="tw-font-bold tw-mr-4 tw-text-sm md:tw-text-base"
+      for="Thu Nhập:"
+    >
+      Chọn vùng:
+
+      <span class="tw-cursor-pointer tw-text-error tw-text-sm" @click="onClick">
+        (Chi tiết tại đây)
+      </span>
+    </label>
     <Checkbox
       :active="areaSelected === area.value"
       v-for="(area, index) in areaList"
@@ -50,6 +59,9 @@ export default {
     onCheck(area) {
       this.areaSelected = area.value;
       this.saveAreaSalary(area.salary);
+    },
+    onClick() {
+      window.open("/muc-luong-toi-thieu-vung");
     },
   },
 };
