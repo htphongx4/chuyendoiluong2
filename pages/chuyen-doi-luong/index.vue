@@ -24,18 +24,14 @@
         <Meta
           name="description"
           property="description"
-          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+          content="Phần mềm chuyển đổi nhanh chóng Gross sang Net / Net sang Gross"
         />
         <Meta
           name="og:description"
           property="og:description"
-          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+          content="Phần mềm chuyển đổi nhanh chóng Gross sang Net / Net sang Gross"
         />
-        <Meta
-          name="image"
-          property="image"
-          content="https://vuongquocanh.com/wp-content/uploads/2018/05/london-eye.jpg"
-        />
+        <Meta name="image" property="image" />
         <Meta name="og:type" property="og:type" content="Website" />
         <Meta
           name="og:image"
@@ -46,6 +42,10 @@
           name="og:url"
           property="og:url"
           content="https://chuyendoi.vercel.app/chuyen-doi-luong?type=gross-to-net"
+        />
+        <Link
+          rel="canonical"
+          href="https://chuyendoi.vercel.app/chuyen-doi-luong?type=gross-to-net"
         />
       </Head>
     </Html>

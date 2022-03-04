@@ -2,8 +2,31 @@
   <Html lang="en">
     <Head>
       <Title>Mức lương tối thiểu vùng chuẩn 2022</Title>
-      <Meta name="title" content="Tinh luong" />
-      <Meta name="description" content="Tinh luong" />
+      <Meta name="title" content="Mức lương tối thiểu vùng chuẩn 2022" />
+      <Meta
+        name="description"
+        property="description"
+        content="Mức lương tối thiểu theo từng vùng chuẩn 2022"
+      />
+      <Meta
+        name="og:description"
+        property="og:description"
+        content="Mức lương tối thiểu theo từng vùng chuẩn 2022"
+      />
+      <Meta
+        name="og:image"
+        property="og:image"
+        content="https://vuongquocanh.com/wp-content/uploads/2018/05/london-eye.jpg"
+      />
+      <Meta
+        name="og:url"
+        property="og:url"
+        content="https://chuyendoi.vercel.app/muc-luong-toi-thieu-vung"
+      />
+      <Link
+        rel="canonical"
+        href="https://chuyendoi.vercel.app/muc-luong-toi-thieu-vung"
+      />
     </Head>
   </Html>
   <div class="tw-container tw-mx-auto tw-w-7/12 tw-pb-10">
