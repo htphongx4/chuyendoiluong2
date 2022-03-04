@@ -2,7 +2,7 @@
   <div class="tw-bg-white tw-rounded-sm tw-p-3 tw-my-4">
     <div class="tw-mb-4">
       <label class="tw-font-bold tw-mr-4 tw-text-sm md:tw-text-base" for="Thu Nhập:"> Thu Nhập: </label>
-      <div class="tw-flex tw-flex-wrap tw-mt-4 tw-gap-4">
+      <div class="tw-flex tw-flex-wrap tw-mt-2 md:tw-mt-4 tw-gap-4">
         <Checkbox :active="moneyType === 'vnd'" @click="onCheck('vnd')">
           VNĐ
         </Checkbox>

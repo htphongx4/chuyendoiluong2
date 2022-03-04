@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-container tw-mx-auto">
+  <div class="tw-container tw-mx-auto tw-px-3 tw-py-10">
     <Html lang="en">
       <Head>
         <Title>Tính lương Gross sang Net / Net sang Gross chuẩn 2022</Title>
@@ -10,13 +10,10 @@
     <div class="tw-flex tw-justify-center tw-items-center tw-gap-6">
       <div
         class="
-          tw-bg-primary-medium
-          tw-text-white
-          tw-font-bold
-          tw-p-10
-          tw-rounded-sm
-          tw-cursor-pointer
-          tw-text-lg
+          tw-bg-primary-medium tw-text-white tw-font-bold tw-p-6
+          md:tw-p-10
+          tw-rounded-sm tw-cursor-pointer
+          md:tw-text-lg
         "
         @click="onClick('gross-to-net')"
       >
@@ -24,13 +21,10 @@
       </div>
       <div
         class="
-          tw-bg-coral
-          tw-text-white
-          tw-font-bold
-          tw-p-10
-          tw-rounded-sm
-          tw-cursor-pointer
-          tw-text-lg
+          tw-bg-coral tw-text-white tw-font-bold tw-p-6
+          md:tw-p-10
+          tw-rounded-sm tw-cursor-pointer
+          md:tw-text-lg
         "
         @click="onClick('net-to-gross')"
       >
@@ -51,6 +45,30 @@ export default {
   components: {
     Regulation,
     SalaryInfo,
+  },
+  data() {
+    return {
+      categories: [
+        {
+          name: "Chuyển đổi Gross => Net",
+          class: "tw-bg-primary-medium",
+          route: "/chuyen-doi-luong",
+          query: "gross-to-net",
+        },
+        {
+          name: "Chuyển đổi Net => Gross",
+          class: "tw-bg-coral",
+          route: "/chuyen-doi-luong",
+          query: "net-to-gross",
+        },
+        {
+          name: "Công thức tính lương",
+          class: "tw-bg-coral",
+          route: "/cong-thuc-tinh-luong",
+          query: "",
+        },
+      ],
+    };
   },
   methods: {
     ...mapActions(useSalaryStore, ["saveSalaryType"]),

@@ -1,7 +1,7 @@
 <template>
   <div class="apply-regulation tw-bg-white tw-rounded-sm tw-p-3 tw-my-4">
-    <h4 class="tw-font-bold">Chọn quy định:</h4>
-    <div class="tw-flex tw-gap-4 tw-my-4">
+    <h4 class="tw-font-bold tw-text-sm md:tw-text-base">Chọn quy định:</h4>
+    <div class="tw-flex tw-gap-4 tw-mt-2 tw-my-4">
       <Checkbox :active="type === 'latest'" @click="onCheck('latest')">
         Mới nhất
       </Checkbox>

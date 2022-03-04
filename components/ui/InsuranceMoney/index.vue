@@ -2,7 +2,7 @@
   <div class="tw-bg-white tw-rounded-sm tw-my-4">
     <div class="tw-mb-4">
       <label class="tw-font-bold tw-mr-4 tw-text-sm md:tw-text-base"> Số tiền đóng bảo hiểm: </label>
-      <div class="tw-flex tw-flex-wrap tw-mt-4 tw-gap-4">
+      <div class="tw-flex tw-flex-wrap tw-mt-2 md:tw-mt-4 tw-gap-4">
         <Checkbox :active="moneyType === 'base'" @click="onCheck('base')">
           Lương chính thức
         </Checkbox>
@@ -11,7 +11,7 @@
         </Checkbox>
       </div>
     </div>
-    <div class="tw-flex">
+    <div class="tw-flex tw-flex-col md:tw-flex-row">
       <div class="tw-relative tw-inline-block">
         <Field
           class="
@@ -21,8 +21,10 @@
             tw-rounded-sm
             tw-outline-none
             tw-pr-16
-            tw-w-64
+            tw-w-full
+            md:tw-w-64
             tw-text-right
+            tw-mb-4 md:tw-mb-0
           "
           name="salary-input"
           :placeholder="moneyType === 'base' ? salary : 'VD: 20,000,000 VNĐ'"
@@ -41,7 +43,7 @@
       </div>
       <SuggestMoney
         v-if="moneyType === 'other'"
-        class="tw-ml-6"
+        class="md:tw-ml-6"
         :money="insuranceMoney"
         @on:sendValue="receiveSuggestedMoney"
       />

@@ -8,7 +8,8 @@
       tw-rounded-sm
       tw-outline-none
       tw-pr-4
-      tw-w-64
+      tw-w-full
+      md:tw-w-64
       tw-text-right
     "
     v-model="numberDependentPerson"

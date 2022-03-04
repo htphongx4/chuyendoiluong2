@@ -54,7 +54,7 @@
     <div class="tw-grid tw-grid-cols-2 md:tw-block">
       <div
         class="
-          tw-font-bold tw-mb-2 tw-pb-2
+          tw-font-bold tw-pb-2
           md:tw-border-b md:tw-border-grey-300
           tw-text-sm
           md:tw-text-base
