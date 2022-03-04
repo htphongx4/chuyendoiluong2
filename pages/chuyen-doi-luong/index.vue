@@ -11,8 +11,42 @@
     <Html lang="en">
       <Head>
         <Title>Tính lương Gross sang Net / Net sang Gross chuẩn 2022</Title>
-        <Meta name="title" content="Tinh luong" />
-        <Meta name="description" content="Tinh luong" />
+        <Meta
+          name="title"
+          property="title"
+          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+        />
+        <Meta
+          name="og:title"
+          property="og:title"
+          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+        />
+        <Meta
+          name="description"
+          property="description"
+          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+        />
+        <Meta
+          name="og:description"
+          property="og:description"
+          content="Tính lương Gross sang Net / Net sang Gross chuẩn 2022"
+        />
+        <Meta
+          name="image"
+          property="image"
+          content="https://vuongquocanh.com/wp-content/uploads/2018/05/london-eye.jpg"
+        />
+        <Meta name="og:type" property="og:type" content="Website" />
+        <Meta
+          name="og:image"
+          property="og:image"
+          content="https://vuongquocanh.com/wp-content/uploads/2018/05/london-eye.jpg"
+        />
+        <Meta
+          name="og:url"
+          property="og:url"
+          content="https://chuyendoi.vercel.app/chuyen-doi-luong?type=gross-to-net"
+        />
       </Head>
     </Html>
     <div class="tw-flex tw-mb-4">
