@@ -52,9 +52,18 @@ export default {
       salaryType: "salaryType",
     }),
   },
+  created() {
+    const { type } = this.$route.query;
+    this.saveSalaryType(type);
+  },
   methods: {
     ...mapActions(useSalaryStore, ["saveSalaryType"]),
     onCheck(type) {
+      this.$router.push({
+        query: {
+          type,
+        },
+      });
       this.saveSalaryType(type);
     },
 
