@@ -62,7 +62,7 @@
       >
         Lương {{ salaryType === "gross-to-net" ? "Net" : "Gross" }}
       </div>
-      <div class="tw-text-primary-medium tw-font-bold">
+      <div class="tw-text-primary-medium tw-font-bold md:tw-mt-2">
         {{
           salaryType === "gross-to-net"
             ? $currency(netSalary)

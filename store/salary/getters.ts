@@ -196,8 +196,87 @@ export default {
       thueTNCN: Math.round(thueTNCN),
       gross: Math.round(gross),
       pbh: Math.round(pbh),
-      maxPBH: Math.round(maxPBH)
+      maxPBH: Math.round(maxPBH),
     };
+  },
+
+  companyPaySocialInsurance(state) {
+    const { companySocialInsurance, insuranceMoney } = state;
+    if (insuranceMoney) {
+      return insuranceMoney * companySocialInsurance;
+    }
+
+    const maxInsurance = 20 * this.salaryByRegulation.baseSalary;
+
+    if (this.grossSalary > maxInsurance) {
+      return maxInsurance * companySocialInsurance;
+    }
+
+    return this.grossSalary * companySocialInsurance;
+  },
+
+  companyPayWorkingInsuranceFee(state) {
+    const { companyWorkingInsurance } = state;
+    let { insuranceMoney } = state;
+
+    if (insuranceMoney) {
+      if (insuranceMoney > this.grossSalary) insuranceMoney = this.grossSalary;
+      return insuranceMoney * companyWorkingInsurance;
+    }
+
+    const maxInsurance = 20 * this.salaryByRegulation.baseSalary;
+
+    if (this.grossSalary > maxInsurance) {
+      return maxInsurance * companyWorkingInsurance;
+    }
+
+    return this.grossSalary * companyWorkingInsurance;
+  },
+
+  companyPayHealthInsuranceFee(state) {
+    const { companyHealthInsurance } = state;
+    let { insuranceMoney } = state;
+
+    if (insuranceMoney) {
+      if (insuranceMoney > this.grossSalary) insuranceMoney = this.grossSalary;
+      return insuranceMoney * companyHealthInsurance;
+    }
+
+    const maxInsurance = 20 * this.salaryByRegulation.baseSalary;
+
+    if (this.grossSalary > maxInsurance) {
+      return maxInsurance * companyHealthInsurance;
+    }
+
+    return this.grossSalary * companyHealthInsurance;
+  },
+
+  companyPayUnemploymentInsuranceFee(state) {
+    const { companyUnemploymentInsurance } = state;
+    let { insuranceMoney } = state;
+
+    if (insuranceMoney) {
+      if (insuranceMoney > this.grossSalary) insuranceMoney = this.grossSalary;
+      return insuranceMoney * companyUnemploymentInsurance;
+    }
+
+    const maxInsurance = 20 * this.areaSalary;
+
+    if (this.grossSalary > maxInsurance) {
+      return maxInsurance * companyUnemploymentInsurance;
+    }
+
+    return this.grossSalary * companyUnemploymentInsurance;
+  },
+
+  totalCompanyPay() {
+    return (
+      this.grossSalary +
+      this.companyPaySocialInsurance +
+      this.companyPayWorkingInsuranceFee +
+      this.companyPayHealthInsuranceFee +
+      this.companyPayUnemploymentInsuranceFee
+    );
   },
 };
 

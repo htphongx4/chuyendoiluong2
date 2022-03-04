@@ -38,6 +38,7 @@
     <GrossToNet />
     <SalaryDetail />
     <TaxSalary />
+    <CompanyPay />
   </div>
 </template>
 
