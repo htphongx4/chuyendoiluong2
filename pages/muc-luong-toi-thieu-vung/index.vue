@@ -29,7 +29,7 @@
       />
     </Head>
   </Html>
-  <div class="tw-container tw-mx-auto tw-w-7/12 tw-pb-10">
+  <div class="tw-container tw-mx-auto md:tw-w-7/12 tw-pb-10 tw-px-4 tw-py-4">
     <div class="tw-text-primary-medium tw-mb-5">
       <h4 class="text-primary tw-text-lg">
         <strong>Mức lương tối thiểu vùng</strong>
