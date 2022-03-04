@@ -29,7 +29,11 @@
         </span>
       </div>
       <div
-        class="tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2"
+        class="
+          tw-pb-2 tw-border-b tw-border-grey-300 tw-p-2
+          w-text-sm
+          md:tw-text-base
+        "
         :class="{ 'tw-font-bold': item.color }"
       >
         {{ item.color ? "" : "-" }} {{ $currency(item.value) }}
