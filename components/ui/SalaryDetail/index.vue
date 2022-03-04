@@ -19,7 +19,10 @@
         <span>{{ item.name }}</span>
         <span
           v-if="item.desc"
-          class="tw-text-error tw-cursor-pointer tw-ml-3"
+          class="
+            tw-text-error tw-cursor-pointer tw-ml-3 tw-text-sm
+            md:tw-text-base
+          "
           @click="onShowDesc(item.desc)"
         >
           (?)

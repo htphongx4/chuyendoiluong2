@@ -20,7 +20,7 @@
         class="
           tw-w-full
           md:tw-max-w-2xl
-          tw-bg-white tw-shadow-lg tw-rounded-lg tw-px-8 tw-py-6
+          tw-bg-white tw-shadow-lg tw-rounded-lg tw-p-4
         "
       >
         <slot />
