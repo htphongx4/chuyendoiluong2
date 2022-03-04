@@ -89,6 +89,10 @@ const items = computed(() => [
   {
     name: "Bảo hiểm Tai nạn lao động - Bệnh nghề nghiệp (0.5%)",
     value: companyPayWorkingInsuranceFee.value,
+    desc: `<ul class="list-unstyled">
+                <li>- Người sử dụng lao động đóng: 0.5%.</li>
+                <li>- Mức lương tối đa tính bảo hiểm y tế bằng 20 lần mức lương cơ sở (hiện là 1.490.000 VND/tháng).</li>
+            </ul>`,
   },
   {
     name: "Bảo hiểm y tế (3%)",
@@ -102,6 +106,10 @@ const items = computed(() => [
   {
     name: "Bảo hiểm thất nghiệp (1%)",
     value: companyPayUnemploymentInsuranceFee.value,
+    desc: `<ul class="list-unstyled">
+                <li>- Người sử dụng lao động đóng: 1%.</li>
+                <li>- Mức lương tối đa tính bảo hiểm thất nghiệp bằng 20 lần mức lương tối thiểu vùng tại vùng mà người sử dụng lao động trực thuộc.</li>
+            </ul>`,
   },
   {
     name: "Tổng chi phí",

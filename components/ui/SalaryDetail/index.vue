@@ -113,7 +113,7 @@ const items = computed(() => [
     value: totalUnemploymentInsuranceFee.value,
     desc: `<ul class="list-unstyled">
                 <li>- Người lao động đóng: 1% (lao động quốc tịch nước ngoài: 0%).</li>
-                <li>- Người sử dụng lao động đóng: 0% (lao động quốc tịch nước ngoài: 0%).</li>
+                <li>- Người sử dụng lao động đóng: 1% (lao động quốc tịch nước ngoài: 1%).</li>
                 <li>- Mức lương tối đa tính bảo hiểm thất nghiệp bằng 20 lần mức lương tối thiểu vùng tại vùng mà người sử dụng lao động trực thuộc.</li>
             </ul>`,
   },
